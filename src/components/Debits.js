@@ -48,15 +48,24 @@ class Debits extends Component {
         </form>
 
         <table className='Debits-table'>
-          <th>
-            <tr>
+            <tr className='labels'>
               <th>Description</th>
               <th>Amount</th>
               <th>Date</th>
             </tr>
-          </th>
           <tbody>
+            {/* Creates table list of debits from API */}
             {this.state.debits.map((debit, index) => {
+              return (
+                <tr key={index}>
+                  <td>{debit.description}</td>
+                  <td>${debit.amount}</td>
+                  <td>{debit.date.slice(0,10)}</td>
+                </tr>
+              )
+            })}
+            {/* Adds new debits to list */}
+            {this.props.debits.map((debit, index) => {
               return (
                 <tr key={index}>
                   <td>{debit.description}</td>

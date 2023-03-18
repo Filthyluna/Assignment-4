@@ -38,7 +38,7 @@ class Credits extends Component {
             <input type="text" name="description" />
           </label>
           <label htmlFor="amount">Amount:
-            <input type="number" name="amount" />
+            <input type="number" name="amount" step="0.01"/>
           </label>
           <label htmlFor="date">Date:
             <input type="date" name="date" />
@@ -47,15 +47,22 @@ class Credits extends Component {
         </form>
 
         <table className='Credits-table'>
-          <th>
-            <tr>
+            <tr className='labels'>
               <th>Description</th>
               <th>Amount</th>
               <th>Date</th>
             </tr>
-          </th>
           <tbody>
             {this.state.credits.map((credit, index) => {
+              return (
+                <tr key={index}>
+                  <td>{credit.description}</td>
+                  <td>${credit.amount}</td>
+                  <td>{credit.date.slice(0,10)}</td>
+                </tr>
+              )
+            })}
+            {this.props.credits.map((credit, index) => {
               return (
                 <tr key={index}>
                   <td>{credit.description}</td>

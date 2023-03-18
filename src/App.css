@@ -37,3 +37,57 @@
     transform: rotate(360deg);
   }
 }
+
+.home-links{
+  margin: auto;
+  padding: 80px 0px;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.home-links :link{
+  text-decoration: none;
+  color: rgb(5, 51, 82);
+}
+
+.home-links :hover{
+  color:rgb(97, 194, 173);
+}
+
+table{
+  /* create table styling that positions table at the center of the
+  page and adds a border */
+  margin: auto;
+  background-color: rgb(252, 247, 242);
+  width: 80%;
+}
+
+.labels{
+  margin: auto;
+  background-color: rgb(143, 199, 212);
+  width: 100%;
+}
+
+img{
+  z-index: -1;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
+.balance{
+  margin: auto;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 24px;
+  font-weight: bold;
+}

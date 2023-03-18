@@ -9,7 +9,7 @@ class AccountBalance extends Component {
   // Display account balance
   render() {
     return (
-      <div>
+      <div className='balance'>
         Balance: ${Math.round(this.props.accountBalance * 100) / 100}
       </div>
     );
