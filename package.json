@@ -1,7 +1,7 @@
 {
   "name": "bank-of-react",
   "version": "0.1.0",
-  "homepage": "https://filthyluna.github.io/Assignment-4/",
+  "homepage": "https://filthyluna.github.io/Assignment-4",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
